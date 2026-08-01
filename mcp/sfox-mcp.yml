@@ -1,0 +1,62 @@
+generated: '2026-07-21'
+method: derived
+status: candidate
+source: https://docs.sfox.com/llms.txt
+server:
+  name: sfox
+  transport: http
+  url: null   # no official hosted MCP server found as of this pass
+  auth: bearer-api-key
+note: >-
+  No first-party or community MCP server was found for sFOX. The following is a
+  candidate tool surface derived from documented REST operations, to be used as a
+  starting point for an MCP server. Not authoritative.
+tools:
+- name: get_order_book
+  description: Get the order book snapshot for a currency pair.
+  source_operation: GET /v1/markets/orderbook/{pair}
+- name: get_candlesticks
+  description: Historical OHLCV candlestick data for a currency pair.
+  source_operation: GET (chartdata.sfox.com) candlesticks
+- name: get_order_estimate
+  description: Smart-routing order estimate for a prospective trade.
+  source_operation: GET order estimate
+- name: request_quote
+  description: Request a one-sided RFQ quote.
+  source_operation: POST /v1/quote
+- name: create_order
+  description: Create a buy or sell order.
+  source_operation: POST /v1/orders/{side}
+- name: get_order
+  description: Get a single order by id.
+  source_operation: GET /v1/orders/{order_id}
+- name: list_open_orders
+  description: List all open orders.
+  source_operation: GET /v1/orders
+- name: list_done_orders
+  description: List all completed orders.
+  source_operation: GET /v1/orders/done
+- name: cancel_order
+  description: Cancel a single order.
+  source_operation: DELETE /v1/orders/{order_id}
+- name: cancel_all_orders
+  description: Cancel all open orders.
+  source_operation: DELETE /v1/orders/open
+- name: get_balances
+  description: Get all account balances.
+  source_operation: GET account balances
+- name: list_transactions
+  description: List account transaction history (trades + transfers).
+  source_operation: GET /v1/account/transactions
+- name: get_fees
+  description: Get account fee rates.
+  source_operation: GET fees
+- name: transfer_funds
+  description: Transfer funds between trading and collateral wallets.
+  source_operation: POST /v1/account/transfer
+- name: create_stake
+  description: Submit a request to stake an asset.
+  source_operation: POST /v1/staking/stake
+- name: list_staking_currencies
+  description: List staking-enabled assets and terms.
+  source_operation: GET /v1/staking/currencies

@@ -1,0 +1,84 @@
+generated: '2026-07-21'
+method: derived
+source: https://docs.sfox.com/llms.txt (endpoint/resource inventory)
+entities:
+- name: Order
+  key: order_id
+  description: A buy/sell order (market, limit, algo/smart-routed) on a currency pair.
+  relationships:
+  - belongs_to: CurrencyPair
+    via: pair
+  - has_many: Trade
+    via: order_id
+- name: Trade
+  description: A fill/execution resulting from an order.
+  relationships:
+  - belongs_to: Order
+    via: order_id
+- name: Quote
+  key: quote_id
+  description: An RFQ (request-for-quote) response that can be executed into an order.
+  relationships:
+  - belongs_to: CurrencyPair
+    via: pair
+- name: Balance
+  description: Per-currency account balance (trading and collateral wallets).
+  relationships:
+  - belongs_to: Currency
+    via: currency
+- name: Transaction
+  description: Account transaction history entry (trades + transfers).
+- name: Currency
+  key: symbol
+  description: A supported digital asset or fiat currency.
+- name: CurrencyPair
+  key: pair
+  description: A tradable market (e.g. btcusd).
+  relationships:
+  - has_one: Currency
+    via: base
+  - has_one: Currency
+    via: quote
+- name: WalletAddress
+  description: Deposit/wallet address for a currency.
+  relationships:
+  - belongs_to: Currency
+    via: currency
+- name: Position
+  description: Post-trade-settlement / shorting position with risk metrics and funding.
+  relationships:
+  - belongs_to: CurrencyPair
+    via: pair
+- name: Stake
+  key: id
+  description: A staking request and its reward transactions.
+  relationships:
+  - belongs_to: Currency
+    via: currency
+- name: WhitelistedAddress
+  description: Custody (sFOX SAFE) whitelisted withdrawal address.
+- name: ApprovalRule
+  key: rule_id
+  description: Custody approval rule governing sensitive requests.
+  relationships:
+  - has_many: ApprovalRequest
+    via: rule_id
+- name: ApprovalRequest
+  key: request_id
+  description: A pending request awaiting approve/deny per an approval rule.
+  relationships:
+  - belongs_to: ApprovalRule
+    via: rule_id
+- name: EndUser
+  description: (Connect API) a white-label end user with KYC/KYB + EDD state.
+  relationships:
+  - has_one: BankAccount
+    via: end_user_id
+- name: BankAccount
+  description: (Connect API) linked bank account (Plaid) for ACH/wire payments.
+  relationships:
+  - belongs_to: EndUser
+    via: end_user_id
+notes: >-
+  Entity graph derived from the documented REST resource/endpoint inventory; sFOX
+  does not publish a machine-readable object reference with id-prefixes.

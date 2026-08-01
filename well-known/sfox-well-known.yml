@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: live probe of /.well-known/ on sFOX API + website hosts
+hosts:
+- https://api.sfox.com
+- https://www.sfox.com
+documents:
+- path: /.well-known/security.txt          # RFC 9116
+  host: https://api.sfox.com
+  status: 404
+- path: /.well-known/security.txt
+  host: https://www.sfox.com
+  status: 404
+- path: /.well-known/openid-configuration   # OIDC discovery
+  host: https://api.sfox.com
+  status: 404
+- path: /.well-known/oauth-authorization-server  # RFC 8414
+  host: https://api.sfox.com
+  status: 404
+- path: /.well-known/api-catalog             # RFC 9727
+  host: https://api.sfox.com
+  status: 404
+- path: /.well-known/ai-plugin.json
+  host: https://api.sfox.com
+  status: 404
+- path: /.well-known/ai-plugin.json
+  host: https://www.sfox.com
+  status: 404
+notes: >-
+  sFOX publishes no /.well-known/ discovery documents on its API or marketing
+  host as of this probe. Authentication is a static bearer API key (no OAuth/OIDC
+  authorization-server metadata). Absence recorded as valid data.

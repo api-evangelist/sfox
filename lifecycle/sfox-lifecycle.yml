@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.sfox.com/
+versioning:
+  scheme: uri-path
+  current: v1
+  base: https://api.sfox.com/v1/
+  docs: https://docs.sfox.com/introduction/getting-started
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: >-
+    No formal deprecation/sunset (RFC 8594) policy is published. The Connect API
+    labels some endpoints as "(Legacy)" (e.g. Submit Documents API Legacy) and
+    ships replacements, and communicates changes via the Connect Release Notes.
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+release_notes:
+  connect: https://docs.sfox.com/connect/introduction/resources/release-notes
+notes: >-
+  No public status page or SLA document was found. Versioning is a single URI
+  path segment (v1). Change communication happens through the Connect API
+  Release Notes and (Legacy) endpoint labeling.

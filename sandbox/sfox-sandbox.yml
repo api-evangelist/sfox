@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.sfox.com/rest-api/rest-endpoints
+environments:
+  production:
+    rest: https://api.sfox.com
+    chartdata: https://chartdata.sfox.com
+    websocket: wss://ws.sfox.com/ws
+  sandbox:
+    rest: https://api.staging.sfox.com
+    websocket: wss://ws.staging.sfox.com/ws
+    access: >-
+      Sandbox/staging access is not enabled by default — contact the sFOX
+      support team to request access to the testing environment.
+keys:
+  separation: >-
+    Production and sandbox each require their own API key; keys are not shared
+    across environments.
+  management: https://trade.sfox.com/account/api
+test_values:
+  published: false
+  notes: >-
+    sFOX does not publish magic test card/account/token values; the sandbox is a
+    full staging environment provisioned per client rather than a fixture set.
+notes: >-
+  Test-vs-live separation is by host (api.staging.sfox.com vs api.sfox.com) and
+  by API key. No test values are invented here.

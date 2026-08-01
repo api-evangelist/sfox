@@ -1,0 +1,40 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.sfox.com/
+authentication:
+  style: bearer-static-api-key
+  header: 'Authorization: Bearer <API_KEY>'
+  ref: authentication/sfox-authentication.yml
+base_url: https://api.sfox.com/v1/
+content_type: application/json
+idempotency:
+  supported: false
+  notes: >-
+    No idempotency-key header or param is documented. Order creation carries a
+    client-supplied `client_order_id` for correlation, but sFOX does not document
+    it as an idempotency/dedup guarantee.
+pagination:
+  style: undocumented
+  notes: >-
+    List endpoints (transactions, done orders, trades) accept query filters
+    (e.g. limit / date bounds) documented per endpoint; a single uniform
+    cursor/offset convention is not published.
+versioning:
+  style: uri-path
+  current: v1
+  ref: lifecycle/sfox-lifecycle.yml
+rate_limiting:
+  signal: 429 status (no rate-limit response headers documented)
+  ref: rate-limits/sfox-rate-limits.yml
+errors:
+  envelope: HTTP status code + JSON body (not RFC 9457 problem+json)
+  ref: errors/sfox-problem-types.yml
+request_tracing:
+  request_id_header: undocumented
+streaming:
+  websocket: wss://ws.sfox.com/ws
+  ref: asyncapi/sfox-websocket-asyncapi.yml
+notes: >-
+  Cross-cutting semantics derived from the public docs. sFOX offers three
+  parallel access surfaces (REST, WebSocket, FIX); the WebSocket API is the
+  recommended path for real-time data since it does not consume REST rate limit.

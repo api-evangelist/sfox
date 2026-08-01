@@ -1,0 +1,34 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.sfox.com/rest-api/authentication
+docs: https://docs.sfox.com/rest-api/authentication
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+  scheme: bearer-static-key
+schemes:
+- name: BearerApiKey
+  type: http
+  scheme: bearer
+  in: header
+  header: Authorization
+  format: 'Authorization: Bearer <API_KEY>'
+  description: >-
+    All REST API requests must include the sFOX API key in the Authorization
+    header as a Bearer token. The key is a static, long-lived secret (not an
+    OAuth access token). API-key permissions are inherited from the owning user
+    account; permission changes apply to existing and new keys automatically.
+  key_management: https://trade.sfox.com/account/api
+  environments:
+    production: Requires a production API key
+    sandbox: Requires a separate sandbox/staging API key
+  applies_to:
+  - sFOX REST API (https://api.sfox.com)
+  - sFOX WebSocket API (authenticate action before subscribing to private feeds)
+  - sFOX Connect API
+notes: >-
+  WebSocket private feeds require an `authenticate` message carrying the same
+  API key before subscription. Market-data endpoints such as
+  GET /v1/markets/orderbook/{pair} are public and need no auth. sFOX does not use
+  HMAC request signing for the REST API.

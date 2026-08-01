@@ -1,0 +1,44 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.sfox.com/errors/error-codes
+format: http-status
+envelope: >-
+  Errors are returned with the corresponding HTTP status code. The response body
+  is JSON (a format other than JSON returns 406). sFOX does not use
+  application/problem+json (RFC 9457).
+problems:
+- status: 400
+  title: Bad Request
+  detail: Your request was malformed in some way.
+- status: 401
+  title: Unauthorized
+  detail: Your API key is wrong.
+- status: 403
+  title: Forbidden
+  detail: The API key is not authorized for this endpoint.
+- status: 404
+  title: Not Found
+  detail: The specified endpoint could not be found.
+- status: 405
+  title: Method Not Allowed
+  detail: You tried to access an endpoint with an invalid method.
+- status: 406
+  title: Not Acceptable
+  detail: You requested a format that isn't JSON.
+- status: 422
+  title: Unprocessable Entity
+  detail: Your request contained invalid input.
+- status: 429
+  title: Too Many Requests
+  detail: >-
+    You have exceeded your request limit. IP-level limit breach requires a
+    60-second wait; route-level limit breach requires a 10-second wait before
+    resuming requests to that route.
+- status: 500
+  title: Internal Server Error
+  detail: We had a problem with our server. Try again later.
+- status: 503
+  title: Service Unavailable
+  detail: We're temporarily offline for maintenance. Please try again later.
+also_see:
+- https://docs.sfox.com/connect/errors/error-codes   # Connect API error codes

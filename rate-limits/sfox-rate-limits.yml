@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.sfox.com/rest-api/rate-limits
+limits:
+- scope: ip
+  limit_count: 250
+  window_seconds: 10
+  description: 250 requests per 10 seconds per IP address (~25 req/s).
+  on_exceed: 429 returned; wait 60 seconds before resuming.
+- scope: route
+  limit_count: null
+  window_seconds: null
+  description: >-
+    Route-specific limits vary by endpoint and are documented on each endpoint
+    page.
+  on_exceed: 429 returned; wait 10 seconds before resuming requests to that route.
+headers: none documented
+notes: >-
+  sFOX recommends the WebSocket API for real-time data since streaming feeds do
+  not count against REST request limits.

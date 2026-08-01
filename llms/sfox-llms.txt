@@ -1,0 +1,190 @@
+# sFOX API
+
+## sFOX API
+
+- [Welcome](https://docs.sfox.com/introduction/master.md)
+- [Getting Started](https://docs.sfox.com/introduction/getting-started.md)
+- [Systems & Operations](https://docs.sfox.com/introduction/systems-and-operations.md)
+- [Rate Limits](https://docs.sfox.com/introduction/rate-limits.md)
+- [REST Endpoints](https://docs.sfox.com/rest-api/rest-endpoints.md)
+- [Authentication](https://docs.sfox.com/rest-api/authentication.md)
+- [Rate Limits](https://docs.sfox.com/rest-api/rate-limits.md)
+- [Account Management](https://docs.sfox.com/rest-api/account-management.md): Account information including current balances, transactions, currencies, pairs, and fee rates.
+- [Get All Balances](https://docs.sfox.com/rest-api/account-management/get-all-balances.md)
+- [Get All Currencies](https://docs.sfox.com/rest-api/account-management/get-all-currencies.md)
+- [Get All Currency Pairs](https://docs.sfox.com/rest-api/account-management/get-all-currency-pairs.md)
+- [Get All Transactions](https://docs.sfox.com/rest-api/account-management/get-all-transactions.md): Retrieve your transaction history
+- [Get Fees](https://docs.sfox.com/rest-api/account-management/get-fees.md)
+- [Orders](https://docs.sfox.com/rest-api/orders.md): Create, cancel, amend, and manage orders
+- [Order Types](https://docs.sfox.com/rest-api/orders/algorithms-and-routing-types.md)
+- [Create Order](https://docs.sfox.com/rest-api/orders/create-order.md): Create an order
+- [Cancel Order](https://docs.sfox.com/rest-api/orders/cancel-order.md)
+- [Cancel Multiple Orders](https://docs.sfox.com/rest-api/orders/cancel-multiple-orders.md)
+- [Cancel All Orders](https://docs.sfox.com/rest-api/orders/cancel-all-orders.md)
+- [Amend Order](https://docs.sfox.com/rest-api/orders/amend-order.md)
+- [Get Single Order](https://docs.sfox.com/rest-api/orders/get-single-order.md)
+- [Get All Open Orders](https://docs.sfox.com/rest-api/orders/get-all-open-orders.md)
+- [Get All Done Orders](https://docs.sfox.com/rest-api/orders/get-all-done-orders.md)
+- [Get All Trades](https://docs.sfox.com/rest-api/orders/get-all-trades.md)
+- [Request for Quote (RFQ)](https://docs.sfox.com/rest-api/request-for-quote-rfq.md): Send Requests for Quotes
+- [Post-Trade Settlement (PTS)](https://docs.sfox.com/rest-api/post-trade-settlement-pts.md): Manage positions, settlement, and risk
+- [Get Account Risk Metrics](https://docs.sfox.com/rest-api/post-trade-settlement-pts/get-account-risk-metrics.md)
+- [Get All Positions](https://docs.sfox.com/rest-api/post-trade-settlement-pts/get-all-positions.md)
+- [Get All Funding Transactions](https://docs.sfox.com/rest-api/post-trade-settlement-pts/get-all-funding-transactions.md)
+- [Get All Funding Rates](https://docs.sfox.com/rest-api/post-trade-settlement-pts/get-all-funding-rates.md)
+- [Get All Risk Modes](https://docs.sfox.com/rest-api/post-trade-settlement-pts/get-all-risk-modes.md)
+- [Create Transfer](https://docs.sfox.com/rest-api/post-trade-settlement-pts/create-transfer.md)
+- [Shorting](https://docs.sfox.com/rest-api/shorting.md): Manage short positions, position settlement, and portfolio risk
+- [Get Account Risk Metrics](https://docs.sfox.com/rest-api/shorting/get-account-risk-metrics.md)
+- [Get All Positions](https://docs.sfox.com/rest-api/shorting/get-all-positions.md)
+- [Transfers](https://docs.sfox.com/rest-api/transfers.md): Deposit to, withdraw from, and transfer within your sFOX account
+- [Get All Deposit Addresses](https://docs.sfox.com/rest-api/transfers/get-all-deposit-addresses.md)
+- [Get Single Deposit Address](https://docs.sfox.com/rest-api/transfers/get-single-deposit-address.md)
+- [Create Deposit Address](https://docs.sfox.com/rest-api/transfers/create-deposit-address.md)
+- [Deposit From Bank Account](https://docs.sfox.com/rest-api/transfers/deposit-from-bank-account.md)
+- [Withdraw From Account](https://docs.sfox.com/rest-api/transfers/withdraw-from-account.md)
+- [Get Single Withdrawal Fee](https://docs.sfox.com/rest-api/transfers/get-single-withdrawal-fee.md)
+- [Create Transfer](https://docs.sfox.com/rest-api/transfers/create-transfer.md)
+- [Custody (sFOX SAFE)](https://docs.sfox.com/rest-api/custody.md): sFOX SAFE Custody is available all sFOX users. However, access is not granted by default. Contact support to request access.
+- [Get Whitelisted Addresses](https://docs.sfox.com/rest-api/custody/get-whitelisted-addresses.md)
+- [Add Whitelisted Address](https://docs.sfox.com/rest-api/custody/add-whitelisted-address.md)
+- [Delete Whitelisted Address](https://docs.sfox.com/rest-api/custody/delete-whitelisted-address.md)
+- [Get Approval Rules](https://docs.sfox.com/rest-api/custody/get-approval-rules.md)
+- [Create Approval Rule](https://docs.sfox.com/rest-api/custody/create-approval-rule.md)
+- [Edit Approval Rule](https://docs.sfox.com/rest-api/custody/edit-approval-rule.md)
+- [Get Approval Requests](https://docs.sfox.com/rest-api/custody/get-approval-requests.md)
+- [Respond to Approval Request](https://docs.sfox.com/rest-api/custody/respond-to-approval-request.md)
+- [Staking](https://docs.sfox.com/rest-api/staking.md): Earn rewards on your holdings by staking supported digital assets. Once you have completed account verification, staking will be enabled for your account. Only certain assets are available to stake.
+- [Get Staking Currencies](https://docs.sfox.com/rest-api/staking/get-staking-currencies.md)
+- [Get All Staking Transactions](https://docs.sfox.com/rest-api/staking/get-all-staking-transactions.md): Staking and reward transaction history
+- [Create Stake](https://docs.sfox.com/rest-api/staking/create-stake.md): Submit a request to stake an asset
+- [Cancel Stake](https://docs.sfox.com/rest-api/staking/cancel-stake.md): Submit a request to stake an asset
+- [Unstake](https://docs.sfox.com/rest-api/staking/unstake.md): Submit a request to unstake an asset
+- [Market Data](https://docs.sfox.com/rest-api/market-data.md): Retrieve market data from sFOX
+- [Get Candlesticks](https://docs.sfox.com/rest-api/market-data/get-candlesticks.md): Historical candlestick data for a currency pair
+- [Get Volume Analytics](https://docs.sfox.com/rest-api/market-data/get-volume-analytics.md): Historical volume data by currency
+- [Get Order Estimate](https://docs.sfox.com/rest-api/market-data/get-order-estimate.md): Smart Routing Order Estimate
+- [Get Order Book](https://docs.sfox.com/rest-api/market-data/get-order-book.md): Order book snapshot for a currency pair.
+- [Reporting](https://docs.sfox.com/rest-api/reporting.md): Account transaction history and tax aid reports
+- [Get Orders Report](https://docs.sfox.com/rest-api/reporting/get-orders-report.md)
+- [Get Monthly Summary](https://docs.sfox.com/rest-api/reporting/get-monthly-summary.md)
+- [Get Portfolio Valuation](https://docs.sfox.com/rest-api/reporting/get-portfolio-valuation.md): USD valuation of your portfolio over time
+- [Get All Transactions](https://docs.sfox.com/rest-api/reporting/get-all-transactions.md): Retrieve your transaction history
+- [Introduction](https://docs.sfox.com/websocket-api/introduction.md)
+- [Connecting](https://docs.sfox.com/websocket-api/connecting.md): Connecting to the WebSocket API
+- [Rate Limits](https://docs.sfox.com/websocket-api/rate-limits.md): Connecting to the WebSocket API
+- [Authentication](https://docs.sfox.com/websocket-api/authentication.md): Authenticating to the WebSocket API
+- [Subscribing & Unsubscribing](https://docs.sfox.com/websocket-api/subscribing-and-unsubscribing.md): Subscribing or unsubscribing to WebSocket feeds
+- [Message Format](https://docs.sfox.com/websocket-api/message-format.md): WebSocket API message format
+- [Market Data](https://docs.sfox.com/websocket-api/market-data.md): Receive real-time streaming market data from the sFOX WebSocket API
+- [Order Book](https://docs.sfox.com/websocket-api/market-data/order-book.md): Real-time streaming order book data
+- [Trades](https://docs.sfox.com/websocket-api/market-data/trades.md): Real-time streaming tick data of publicly executed trades
+- [Ticker](https://docs.sfox.com/websocket-api/market-data/ticker.md): Real-time streaming day OHLCV data and last trade
+- [Orders & Account Data](https://docs.sfox.com/websocket-api/orders-and-account-data.md): Receive real-time streaming account updates from the sFOX WebSocket API
+- [Orders](https://docs.sfox.com/websocket-api/orders-and-account-data/orders.md): Real-time streaming updates to your open orders
+- [Trades](https://docs.sfox.com/websocket-api/orders-and-account-data/trades.md): Real-time streaming updates of completed trades.
+- [Balances](https://docs.sfox.com/websocket-api/orders-and-account-data/balances.md): Real-time streaming updates to your account balances
+- [Post-Trade Settlement](https://docs.sfox.com/websocket-api/orders-and-account-data/post-trade-settlement.md): Real-time streaming account post-trade settlement credit and risk updates
+- [FIX Order Entry](https://docs.sfox.com/fix-api/fix.md): Use the FIX Order Entry session to submit, manage, and cancel orders.
+- [FIX Market Data](https://docs.sfox.com/fix-api/fix-market-data.md): Use the FIX Market Data session to receive market data from the FIX API
+- [QuickFIX Guide](https://docs.sfox.com/fix-api/quickfix-guide.md): How to start integrating sFOX's FIX API using the QuickFIX FIX Engine Library
+- [Error Codes](https://docs.sfox.com/errors/error-codes.md)
+
+## Connect API
+
+- [Welcome](https://docs.sfox.com/connect/introduction/welcome.md)
+- [Getting Started](https://docs.sfox.com/connect/introduction/getting-started.md)
+- [Resources](https://docs.sfox.com/connect/introduction/resources.md)
+- [Terminology](https://docs.sfox.com/connect/introduction/resources/terminology.md)
+- [Systems & Operations](https://docs.sfox.com/connect/introduction/resources/systems-and-operations.md)
+- [Integration Options](https://docs.sfox.com/connect/introduction/resources/integration-options.md)
+- [Release Notes](https://docs.sfox.com/connect/introduction/resources/release-notes.md)
+- [Guides](https://docs.sfox.com/connect/introduction/guides.md)
+- [End User Onboarding & KYC](https://docs.sfox.com/connect/introduction/guides/onboarding.md)
+- [Quick Start: Individual Accounts](https://docs.sfox.com/connect/introduction/guides/onboarding/quick-start-individual-accounts.md)
+- [Individuals](https://docs.sfox.com/connect/introduction/guides/onboarding/individuals.md)
+- [Businesses](https://docs.sfox.com/connect/introduction/guides/onboarding/businesses.md)
+- [Enhanced Due Diligence (EDD)](https://docs.sfox.com/connect/introduction/guides/onboarding/enhanced-due-diligence-edd.md)
+- [REST Endpoints](https://docs.sfox.com/connect/rest-api/rest-endpoints.md)
+- [Authentication](https://docs.sfox.com/connect/rest-api/authentication.md)
+- [End Users](https://docs.sfox.com/connect/rest-api/end-users.md): User management
+- [Create End User](https://docs.sfox.com/connect/rest-api/end-users/create-end-user.md)
+- [Update End User](https://docs.sfox.com/connect/rest-api/end-users/update-end-user.md)
+- [Get End User](https://docs.sfox.com/connect/rest-api/end-users/get-end-user.md)
+- [Get Multiple End Users](https://docs.sfox.com/connect/rest-api/end-users/get-multiple-end-users.md)
+- [Create User Auth Token](https://docs.sfox.com/connect/rest-api/end-users/create-user-auth-token.md)
+- [Create Multiple User Auth Tokens](https://docs.sfox.com/connect/rest-api/end-users/create-multiple-user-auth-tokens.md)
+- [Create Verification Code](https://docs.sfox.com/connect/rest-api/end-users/create-verification-code.md)
+- [Confirm Verification Code](https://docs.sfox.com/connect/rest-api/end-users/confirm-verification-code.md)
+- [Get EDD Requests](https://docs.sfox.com/connect/rest-api/end-users/get-edd-requests.md)
+- [Get EDD Prompts](https://docs.sfox.com/connect/rest-api/end-users/get-edd-prompts.md)
+- [Create EDD Responses](https://docs.sfox.com/connect/rest-api/end-users/create-edd-responses.md)
+- [Submit Documents](https://docs.sfox.com/connect/rest-api/end-users/submit-documents.md)
+- [Submit Documents API](https://docs.sfox.com/connect/rest-api/end-users/submit-documents/submit-documents-api.md)
+- [Submit Documents API (Legacy)](https://docs.sfox.com/connect/rest-api/end-users/submit-documents/submit-documents-api-legacy.md)
+- [Submit Documents (SFTP)](https://docs.sfox.com/connect/rest-api/end-users/submit-documents/submit-documents-sftp.md)
+- [Deactivate User](https://docs.sfox.com/connect/rest-api/end-users/deactivate-user.md)
+- [Payments](https://docs.sfox.com/connect/rest-api/payments.md): Link a bank account and get wire instructions
+- [Get Bank Account](https://docs.sfox.com/connect/rest-api/payments/get-bank-account.md): Returns the status and account information of the linked bank account
+- [Create Bank Account (Plaid)](https://docs.sfox.com/connect/rest-api/payments/create-bank-account-plaid.md): Saves bank account information for your sFOX account
+- [Create Bank Account](https://docs.sfox.com/connect/rest-api/payments/create-bank-account.md): Saves bank account information for your sFOX account
+- [Delete Bank Account](https://docs.sfox.com/connect/rest-api/payments/delete-bank-account.md)
+- [Verify Bank Account](https://docs.sfox.com/connect/rest-api/payments/verify-bank-account.md)
+- [Get Wire Instructions](https://docs.sfox.com/connect/rest-api/payments/account-management.md)
+- [Get Plaid Processors](https://docs.sfox.com/connect/rest-api/payments/get-plaid-processors.md): Saves bank account information for your sFOX account
+- [Amend Plaid Processors](https://docs.sfox.com/connect/rest-api/payments/amend-plaid-processors.md): Saves bank account information for your sFOX account
+- [Get ACH Agreement Status](https://docs.sfox.com/connect/rest-api/payments/get-ach-agreement-status.md)
+- [Request ACH Onboarding](https://docs.sfox.com/connect/rest-api/payments/request-ach-onboarding.md)
+- [Get ACH Deposit Limit](https://docs.sfox.com/connect/rest-api/payments/get-ach-deposit-limit.md): sFOX has partnered up with Dwolla, a US payments processing platform, to integrate ACH Transfer capabilities.
+- [Withdrawals](https://docs.sfox.com/connect/rest-api/withdrawals.md): Withdrawal Management and Confirmation
+- [Confirm Withdrawal](https://docs.sfox.com/connect/rest-api/withdrawals/confirm-withdrawal.md)
+- [Resend Confirmation Code](https://docs.sfox.com/connect/rest-api/withdrawals/resend-confirmation-code.md)
+- [Cancel Withdrawal](https://docs.sfox.com/connect/rest-api/withdrawals/cancel-withdrawal.md)
+- [Transfers](https://docs.sfox.com/connect/rest-api/transfers.md)
+- [Create Transfer](https://docs.sfox.com/connect/rest-api/transfers/create-transfer.md)
+- [Confirm Transfer](https://docs.sfox.com/connect/rest-api/transfers/confirm-transfer.md)
+- [Resend Confirmation Code](https://docs.sfox.com/connect/rest-api/transfers/resend-confirmation-code.md)
+- [Cancel Transfer](https://docs.sfox.com/connect/rest-api/transfers/cancel-transfer.md)
+- [Get Transfer Permissions](https://docs.sfox.com/connect/rest-api/transfers/get-transfer-permissions.md)
+- [Get Transfer History](https://docs.sfox.com/connect/rest-api/transfers/get-transfer-history.md)
+- [Monetization](https://docs.sfox.com/connect/rest-api/monetization.md)
+- [Get Settings](https://docs.sfox.com/connect/rest-api/monetization/get-settings.md)
+- [Create Setting](https://docs.sfox.com/connect/rest-api/monetization/create-setting.md)
+- [Update Setting](https://docs.sfox.com/connect/rest-api/monetization/update-setting.md)
+- [Delete Setting](https://docs.sfox.com/connect/rest-api/monetization/delete-setting.md)
+- [Get Permissions](https://docs.sfox.com/connect/rest-api/monetization/get-permissions.md)
+- [Get Monetization History](https://docs.sfox.com/connect/rest-api/monetization/get-monetization-history.md)
+- [Connecting](https://docs.sfox.com/connect/websocket-api/websocket-feeds.md): Connecting to the sFOX Connect WebSocket feed gives you access to real-time updates about your users and market data
+- [Authentication](https://docs.sfox.com/connect/websocket-api/websocket-feeds-1.md)
+- [Subscribing & Unsubscribing](https://docs.sfox.com/connect/websocket-api/websocket-feeds-2.md)
+- [Message Format](https://docs.sfox.com/connect/websocket-api/websocket-feeds-3.md)
+- [End Users](https://docs.sfox.com/connect/websocket-api/end-users.md): Stream account data from all of your end users
+- [Onboarding](https://docs.sfox.com/connect/websocket-api/end-users/users.md)
+- [Balances](https://docs.sfox.com/connect/websocket-api/end-users/users-1.md)
+- [Orders](https://docs.sfox.com/connect/websocket-api/end-users/users-2.md)
+- [Trades](https://docs.sfox.com/connect/websocket-api/end-users/users-3.md)
+- [Market Data](https://docs.sfox.com/connect/websocket-api/market-data.md): Receive real-time streaming market data from the sFOX WebSocket API
+- [Order Book](https://docs.sfox.com/connect/websocket-api/market-data/users.md): Real-time order books for a specified currency pair.
+- [Trades](https://docs.sfox.com/connect/websocket-api/market-data/users-1.md): Real-time tick data feed of any trade executed on sFOX’s supported liquidity venues
+- [Ticker](https://docs.sfox.com/connect/websocket-api/market-data/users-2.md): Real-time streaming day OHLCV and last trade data
+- [Overview](https://docs.sfox.com/connect/single-sign-on/overview.md): SSO integrations enable partners to seamlessly authenticate users to sFOX and utilize sFOX's front end
+- [IdP Initiated SSO](https://docs.sfox.com/connect/single-sign-on/overview/idp-initiated-sso.md): The following graphic and description provides an overview of the SSO integration
+- [IdP Data](https://docs.sfox.com/connect/single-sign-on/idp-data.md)
+- [SAML Response Data](https://docs.sfox.com/connect/single-sign-on/account-management.md): Your enterprise would send the following SAML Assertion Attributes in the SAML Response to sFOX to give additional information about the user
+- [Error Codes](https://docs.sfox.com/connect/errors/error-codes.md)
+
+
+---
+
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
+
+## Querying This Documentation
+If you need additional information, you can query the documentation dynamically by asking a question.
+Perform an HTTP GET request on a page URL with the `ask` query parameter:
+```
+GET https://docs.sfox.com/introduction/master.md?ask=<question>
+```
+The question should be specific, self-contained, and written in natural language.
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.

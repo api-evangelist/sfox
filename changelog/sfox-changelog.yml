@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.sfox.com/connect/introduction/resources/release-notes
+scheme: dated
+scope: sFOX Connect API release notes (recent window)
+entries:
+- date: '2025-12-11'
+  breaking: false
+  highlights:
+  - Updated response schema for the "Get End User" endpoint.
+  - Launched new "Submit Documents API".
+- date: '2025-11-20'
+  breaking: false
+  highlights:
+  - >-
+    Enhanced KYC/KYB: new optional attributes on Create End User (intermediary
+    status, expected transfer volume, expected trade volume, employment status,
+    industry, occupation, job title).
+- date: '2025-06-24'
+  breaking: false
+  highlights:
+  - >-
+    Added source-of-funds collection to KYC/KYB via source_of_funds and
+    source_of_funds_other attributes.
+  - Source-of-funds information now returned on GET End User endpoints.
+notes: >-
+  Dated release notes are published for the Connect API. The core trading REST
+  API communicates changes through endpoint docs and (Legacy) labeling rather
+  than a separate dated changelog.
