@@ -5,12 +5,10 @@ source: https://docs.sfox.com/llms.txt
 server:
   name: sfox
   transport: http
-  url: null   # no official hosted MCP server found as of this pass
+  url: null
   auth: bearer-api-key
-note: >-
-  No first-party or community MCP server was found for sFOX. The following is a
-  candidate tool surface derived from documented REST operations, to be used as a
-  starting point for an MCP server. Not authoritative.
+note: No first-party or community MCP server was found for sFOX. The following is a candidate tool surface
+  derived from documented REST operations, to be used as a starting point for an MCP server. Not authoritative.
 tools:
 - name: get_order_book
   description: Get the order book snapshot for a currency pair.
@@ -60,3 +58,9 @@ tools:
 - name: list_staking_currencies
   description: List staking-enabled assets and terms.
   source_operation: GET /v1/staking/currencies
+deployment:
+  mode: none
+  verified: derived
+  tools: 16
+  checked: '2026-08-12'
+  source: catalog MCP census
