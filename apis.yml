@@ -120,6 +120,8 @@ apis:
   - type: ChangeLog
     url: changelog/sfox-changelog.yml
 common:
+- type: Website
+  url: https://www.sfox.com/
 - type: DeveloperPortal
   url: https://www.sfox.com/api/
 - type: Documentation
