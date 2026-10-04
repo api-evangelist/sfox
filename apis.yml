@@ -57,10 +57,11 @@ tags:
 - Liquidity
 - Staking
 - Institutional
-- Financial-Services
+- Financial Services
 - Market Data
 - WebSocket
 - FIX
+- Real-Time
 tags_raw:
 - Company
 - Cryptocurrency
@@ -74,6 +75,8 @@ tags_raw:
 - Market Data
 - WebSocket
 - FIX
+- Financial-Services
+- Real-Time
 apis:
 - name: sFOX REST API
   description: >-
