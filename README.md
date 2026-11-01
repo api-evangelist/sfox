@@ -64,6 +64,127 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Sfox is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+sFOX is a unified crypto prime brokerage and infrastructure platform for professional and institutional investors — asset managers, hedge funds, family offices, and financial institutions. It aggregates liquidity from 30+ providers across 80+ markets for smart-routed best execution, and combines that with bankruptcy-remote custody (sFOX SAFE, via SAFE Trust Company), staking, credit, and post-trade settlement in one platform. sFOX exposes a REST API, a WebSocket streaming API, and a FIX API for trading, account management, RFQ, transfers, custody, staking, market data, and reporting; a separate white-label "Connect" API covers end-user onboarding, KYC/KYB, bank linking (Plaid/Dwolla), payments, withdrawals, and SSO for businesses building crypto products.
 
-Backed by: y-combinator
+**Areas:** Company · Cryptocurrency · Prime Brokerage · Trading · Digital Asset Custody · Liquidity · Staking · Institutional · Financial Services · Market Data · WebSocket · FIX
+
+## Sfox on APIs.io
+
+Everything profiled for Sfox is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/sfox/](https://apis.io/providers/sfox/)** — or go straight to one of the APIs or properties below.
+
+### APIs (3)
+
+- [sFOX REST API](https://apis.io/apis/sfox/sfox-rest-api/) — REST API for trading, order management, RFQ, account balances and transactions, transfers/deposits/withdrawals, custody (sFOX SAFE), staking, post-trade…
+- [sFOX WebSocket API](https://apis.io/apis/sfox/sfox-websocket-api/) — Real-time streaming API for market data (order book, trades, ticker) and private account data (open orders, trades, balances, post-trade settlement).…
+- [sFOX Connect API](https://apis.io/apis/sfox/sfox-connect-api/) — White-label REST + WebSocket API for businesses: end-user management, KYC/KYB and Enhanced Due Diligence, bank-account linking (Plaid), ACH (Dwolla) and…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [sFOX WebSocket API](https://apis.io/asyncapis/sfox/sfox-websocket-asyncapi/)
+
+#### Event channels (8)
+
+Individual events and webhooks the provider emits.
+
+- [orderbook.net.{basequote}](https://apis.io/channels/sfox/orderbook-net-basequote/)
+- [orderbook.sfox.{basequote}](https://apis.io/channels/sfox/orderbook-sfox-basequote/)
+- [private.user.balances](https://apis.io/channels/sfox/private-user-balances/)
+- [private.user.open-orders](https://apis.io/channels/sfox/private-user-open-orders/)
+- [private.user.post-trade-settlement](https://apis.io/channels/sfox/private-user-post-trade-settlement/)
+- [private.user.trades](https://apis.io/channels/sfox/private-user-trades/)
+- [ticker.sfox.{basequote}](https://apis.io/channels/sfox/ticker-sfox-basequote/)
+- [trades.sfox.{basequote}](https://apis.io/channels/sfox/trades-sfox-basequote/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [sfox](https://apis.io/servers/sfox/sfox/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Sfox Authentication](https://apis.io/security/sfox/sfox-authentication/)
+- [Sfox Domain Security](https://apis.io/security/sfox/sfox-domain-security/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Sfox Rate Limits](https://apis.io/rate-limits/sfox/sfox-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.sfox.com/)
+- [Documentation](https://docs.sfox.com/)
+- [Getting started](https://docs.sfox.com/introduction/getting-started)
+- [API reference](https://docs.sfox.com/rest-api/rest-endpoints)
+- [Sign up](https://trade.sfox.com/signup)
+- [Support](https://www.sfox.com/contact-us/)
+- [Blog](https://www.sfox.com/news/)
+- [Terms of service](https://www.sfox.com/terms/)
+- [Privacy policy](https://www.sfox.com/privacy/)
+
+## API Evangelist rating
+
+**Kin Score 41.7** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 78.6 |
+| Contract quality | 43.8 |
+| Contract governance | 4.5 |
+| Operational transparency | 44.7 |
+| Developer ergonomics | 47.6 |
+| Access clarity | 27.6 |
+
+**Agent readiness 21.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | derived (partial credit) |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 30.6** — Securities & Market Data
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/sfox/](https://apis.io/providers/sfox/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Sfox: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/sfox/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
